@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="SCSS.css">
+</head>
+<body>
+    <div class="container">
+    <div class="left">
+<!-- Add task section -->
+       <div>
+            <h1 style="margin-left: 20px; margin-top: 20px;">Task List</h1>
+            <form action="" id="new-task-form">
+                <input type="number" placeholder="Task Id" id="Taskid">
+                <input type="text" name="new-task-input" id="new-task-input" placeholder="What do you have planned?"/>
+                <textarea id="email" placeholder="Enter emails"></textarea>
+                <select name="status" id="status">
+                    <option value="inprogress">Inprogress</option>
+                    <option value="completed">Completed</option>
+                    <option value="pending">Pending</option>
+                    <option value="cancel">Cancel</option>
+                </select>
+                <input type="date" placeholder="start-date" id="start-date">
+                <input type="date" placeholder="end-date" id="end-date">
+                <input type="submit" id = "new-task-submit" value="Add task"/>
+            </form>
+       </div>
+    </div>
+    <div class="right">
+        <div class="top">
+            <!-- searchBx start -->
+            <div class="searchBx">
+                <h2 style="margin-left: 40px; margin-top: 15px;">Dashboard</h2>
+            </div>
+            <div class="inputBx">
+                <input type="text" placeholder="Search..." style="border: none; background-color: #f8f2fe;">
+            </div>
+            <div id="results" style="position: absolute; background-color: white; width: 100%;"></div>
+        </div>
+
+        <div class="bottom">
+            <main>
+                <section>
+                    <div id="tasks">
+                        <!-- <div class="task">
+                            <div class="content">
+                                <input type="text" class="text" value="A new task" readonly>
+                            </div>
+                            <div class="actions">
+                                <button class="edit">Edit</button>
+                                <button class="delete">Delete</button>
+                            </div>
+                        </div> -->
+                        <div id="inprogress">
+                            <p style="margin-left: 75px; margin-top: 20px;">Inprogress</p>
+                            <button class="sort-button">Sort</button>
+                        </div>
+                        <div id="completed">
+                            <p style="margin-left: 75px; margin-top: 20px;">Completed</p>
+                            <button class="sort-button">Sort</button>
+                        </div>
+                        <div id="pending">
+                            <p style="margin-left: 85px; margin-top: 20px;">Pending</p>
+                            <button class="sort-button">Sort</button>
+                        </div>
+                        <div id="cancel">
+                            <p style="margin-left: 95px; margin-top: 20px;">Cancel</p>
+                            <button class="sort-button">Sort</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

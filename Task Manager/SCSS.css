@@ -1,0 +1,145 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+#new-task-submit {
+	color: var(--pink);
+	font-size: 1.25rem;
+	font-weight: 700;
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.left {
+    position: relative;
+    width: 200px;
+    height: 35rem;
+    background-color: white;
+	margin-left: 2px;
+	border-radius: 25px;
+}
+
+.right {
+	position: relative;
+	width: 250px;
+	height: 100%;
+}
+.container{
+	display: flex;
+	margin-left: 30px;
+	margin-top: 10px;
+	background-color:  rgba(255, 255, 255, .2);
+	height: 40rem;
+	position: relative;
+    width: 95%;
+    height: 95vh;
+    background: #FFE6E6;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    border: 5px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1),
+        0 0 10px rgba(0, 0, 0, .2),
+        0 0 15px rgba(0, 0, 0, .2);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.top{
+	display: flex;
+	width: 65rem;
+	background-color: white;
+	height: 65px;
+	border-radius: 25px;
+}
+
+.sort-button{
+	margin-right: 160px;
+	margin-bottom: 10px;
+}
+
+.task{
+	margin-bottom: 5px;
+	background-color: #e2d5ff;
+}
+
+.inputBx{
+	margin-left: 20px;
+	margin-top: 11px;
+	margin-left: 500px;
+
+	position: relative;
+    width: 250px;
+    height: 40px;
+    background: #f8f2fe;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+#results{
+	margin-left: 670px;
+	margin-top: 55px;
+	border-radius: 20px;
+}
+.bottom{
+	display: flex;
+	width: 65rem;
+	height: 30rem;
+	background-color: transparent;
+	margin-top: 20px;
+	border-radius: 25px;
+}
+
+#tasks{
+	display: flex;
+}
+
+#inprogress{
+	background-color: white;
+	margin-left: 10px;
+	width: 15rem;
+	height: 30rem;
+	border-radius: 25px;
+}
+
+#completed{
+	margin-left: 9px;
+	background-color: white;
+	width: 15rem;
+	border-radius: 25px;
+}
+
+#pending{
+	background-color: white;
+	width: 15rem;
+	margin-left: 9px;
+	border-radius: 25px;
+}
+
+#cancel{
+	background-color: white;
+	width: 15rem;
+	margin-left: 9px;
+	border-radius: 25px;
+}
